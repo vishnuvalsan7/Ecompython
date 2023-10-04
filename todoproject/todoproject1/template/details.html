@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="shadow card">
+
+                <div class="card-body">
+                    <h6 class="card-title">{{task.name}}</h6>
+                    <p><b>{{task.priority}}</b></p>
+                    <p><b>{{task.date}}</b></p>
+                    <h1>hello</h1>
+                    <a class="btn btn-danger" href="{% url 'delete' task.id %}">Complete</a>
+                    <a class="btn btn-success" href="{% url 'update' task.id %}">Update</a>
+                </div>
+
+            </div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>details</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--{% for i in task %}-->
+<!--{{i.name}}-->
+<!--{{i.priority}}<br>-->
+<!--{% endfor %}-->
+<!--</body>-->
+<!--</html>-->
